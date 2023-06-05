@@ -116,7 +116,7 @@ By following these steps, you will successfully install HeidiSQL and establish t
 By visiting this URL and successfully logging in, you can confirm that osTicket is operational, allowing you to start utilizing its ticketing system and support features effectively.</p>
 
 <h3>Step 11: Tidy Up</h3>
-<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/10cf1538-640b-4eb0-b8a1-15a134399bf3">
+<img width="1000" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/10cf1538-640b-4eb0-b8a1-15a134399bf3">
 <p>Before delving into the ticket system, perform some cleanup tasks:
 
 Delete the following directory: C:\inetpub\wwwroot\osTicket\setup.
@@ -202,7 +202,7 @@ Configuring help topics allows for streamlined categorization and efficient mana
 <p>In the large text box, provide detailed information regarding each topic. Refer to the provided image for examples.</p>
 
 <h3>Step 21: Troubleshooting and Solving Tickets</h3>
-<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/89c98e8c-e16f-400a-b84d-003ae7c55e2c">
+<img width="1000" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/89c98e8c-e16f-400a-b84d-003ae7c55e2c">
 <p>To begin, log in as Jane.Doe, one of the agents you created earlier in this guide.
 
 As Jane, you will observe the tickets, set priority levels, assign them to different staff members and departments, and apply the appropriate SLA plan. Assign two of the tickets to Jane and one to John. Now, switch to John's account and resolve the ticket assigned to him.</p>
