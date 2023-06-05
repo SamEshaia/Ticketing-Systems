@@ -136,6 +136,74 @@ Feel free to create additional roles according to your requirements, as the exam
 
 By establishing roles, you can effectively manage user permissions and access levels within osTicket, ensuring efficient administration and delegation of tasks.</p>
 
+<h3>Step 13: Establish Departments</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/d2f9a9c4-7621-44d3-8855-571c16cc6e90">
+<p>In the Admin Panel, access the Agents tab and click on Departments. Proceed to click on "Add New Department." On the setup page, name the department as "System Administrators" and maintain the default settings.
 
+Once you have named the department, click on "Create Dept" to finalize the setup.</p>
 
+<h3>Step 14: Set up Teams</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/4e87a745-a5b7-425c-bb22-43ffcb6e8dce">
+<p>Within the Admin Panel, select the Teams tab under the Agents section. Create a new team called "Level II Support." In the setup page for the new team, keep the Team tab at its default settings.
+In the Members tab, add your own user account to the team.</p>
+
+<h3>Step 15: Enable Ticket Creation for All Users</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/7d48f332-3f69-44a0-850e-7497fa2f513b">
+<p>In the Admin Panel, access the User Settings and make sure the option to "Require registration and login to create tickets” is unchecked. Uncheck this box to allow anyone to create tickets without requiring registration or login.</p>
+
+<h3>Step 16: Add Agents</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/993baae6-b4aa-42e9-92b5-8d0cd7ef7db3">
+<p>In the Admin Panel Agents section, click on "Add New" to create new agent profiles. Assign names such as Jane Doe and John Doe, providing their respective email addresses, usernames, and passwords (which can be set to remain unchanged upon login).
+
+Next, navigate to the Access tab and assign the department as "System Administrators" and the role as "Supreme Admin" for the agents. Ensure that all permissions are checked, and add them to the Level Support II Team.
+
+Additionally, in the Access tab, add support give them supreme admin to the Extended Access.</p>
+
+<h3>Set up Users (Customers)</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/843a4690-8a84-4bb7-984d-07f9e5a5be32">
+<p>In the Agent Panel, select the Users tab. Click on "Add New User" to create new user profiles. Input desired names and email addresses. As an example, I used “Karen Karen” and “Ken Ken”.</p>
+
+<h3>Step 18: Set up SLA (Service Level Agreement)</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/8130ab36-3a6d-4e71-9f3e-2d7c6254a06b">
+<p>Return to the Admin Panel and access the manage tab. Click on SLA and select "Add New SLA Plan" to configure the following SLA plans:</p>
+<ul>
+ <li>Name: SEV-A (1 hour response time, available 24/7)</li>
+ <li>Name: SEV-B (4 hours response time, available 24/7)</li>
+ <li>Name: SEV-C (8 hours response time, available during business hours)</li>
+</ul>
+<p>Leave the rest of the options at the default configurations.
+
+By defining SLA plans, you establish clear expectations for response times based on the severity level of tickets, ensuring prompt and efficient resolution of customer issues.</p>
+
+<h3>Step 19: Set up Help Topics</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/1aa809b5-329f-4b3b-b395-5464442a096f">
+<p>Within the Admin Panel, navigate to the Manage tab and select Help Topics. Click on "Add New Help Topic" to create the following topics:</p>
+<ul>
+ <li>Topic: Business Critical Outage</li>
+ <li>Topic: Personal Computer Issues</li>
+ <li>Topic: Equipment Request</li>
+ <li>Topic: Password Reset</li>
+</ul>
+<p>You don't need to fill out any additional details and can leave the options as they are. Once you've entered the topic, click on "Add Topic" to save the settings.
+
+Configuring help topics allows for streamlined categorization and efficient management of different types of support requests, ensuring that tickets are appropriately classified and addressed by the support team.</p>
+
+<h1>Tickets and Ticket Lifecycle</h1>
+<p>In this section, we practice creating, triaging, and solving tickets.</p>
+
+<h3>Step 20: Creating Tickets</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/57cd4189-a286-45b7-ac1e-d8f32737613a">
+<p>Go to http://localhost/osTicket and click the "Open a New Ticket" button. Fill out the Issue Summary for each ticket with the following topics:</p>
+<ul>
+ <li>Entire Mobile/Online Banking System is down</li>
+ <li>Entire Accounting Dept Adobe Reader Not Working</li>
+ <li>When are we getting a hardware Refresh</li>
+</ul>
+<p>In the large text box, provide detailed information regarding each topic. Refer to the provided image for examples.</p>
+
+<h3>Step 21: Troubleshooting and Solving Tickets</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/89c98e8c-e16f-400a-b84d-003ae7c55e2c">
+<p>To begin, log in as Jane.Doe, one of the agents you created earlier in this guide.
+
+As Jane, you will observe the tickets, set priority levels, assign them to different staff members and departments, and apply the appropriate SLA plan. Assign two of the tickets to Jane and one to John. Now, switch to John's account and resolve the ticket assigned to him.</p>
 
