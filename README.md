@@ -68,3 +68,74 @@ By completing this step, you will successfully install osTicket v1.15.8 and conf
 <p>After restarting IIS, you will find the dedicated osTicket section under the Default Web Site in IIS. This confirms the successful configuration of osTicket. To access osTicket, simply click on "Browse :80" within the osTicket section.
 
 By following these steps, you can conveniently access and explore osTicket through the provided link, allowing you to begin utilizing its features for efficient ticket management and support.</p>
+
+<h3>Step 6: Activate Essential Extensions</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/d9c33cb7-944e-4706-924f-6f8bfe01f376">
+<p>Access IIS, go to sites, then Default, and select osTicket. Double-click on PHP Manager. Next, click on "Enable or disable an extension."
+
+Enable the following vital extensions for optimal osTicket functionality:</p>
+<ul>
+ <li>php_imap.dll</li>
+ <li>php_intl.dll</li>
+ <li>php_opcache.dll</li>
+</ul>
+<p>Once you have enabled these extensions, refresh the osTicket site in your browser to witness the applied changes. You will now experience enhanced features and capabilities within osTicket, enabling seamless ticket management and support operations.</p>
+
+<h3>Step 7: Configure ost-config.php and Set Permissions</h3>
+<img width="700" height"400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/84256b90-6906-4c4d-866e-a0d998cd6793">
+<p>Go to C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php and rename the file from "ost-sampleconfig.php" to "ost-config.php."
+
+Next, access the properties of the newly renamed "ost-config.php" file. Navigate to the security tab and click on "Advanced." In the ensuing window, select "Disable inheritance" and then choose "Remove all inherited permissions from this object."
+
+Click "Add" and another window will appear. Select "Select Principal" (underlined in blue). In the text box, type "Everyone" and click "Check Names." Once validated, click "OK."
+
+Check the "Full control" box and click "OK." Apply the changes and confirm by clicking "OK."
+
+By completing these steps, you have successfully configured the necessary file and set the appropriate permissions for "ost-config.php," ensuring proper functionality and security for osTicket.</p>
+
+<h3>Step 8: Continue osTicket Setup Page</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/8c5b0523-e585-4509-b27a-abf9e02240dd">
+<p>Proceed with filling out the osTicket setup page in your browser. Remember, the email addresses entered can be fictitious, but ensure you remember or note them down along with the chosen username and password.
+
+Note that you can leave the MySQL Database field blank for now, as it will be addressed in the following steps.</p>
+
+<h3>Step 9: Set up Database with HeidiSQL</h3>
+<img width="1000" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/6b5ea2e5-fce4-40f5-a324-bb0e8f6328e4">
+<p>Install HeidiSQL using the provided setup file (HeidiSQL_12.3.0.6589_Setup.exe). Once installed, the program will open automatically. Locate the "New" button at the bottom left of the program window and click on it. Enter the password you created earlier for MySQL, then click "Open."
+
+To configure the osTicket database, right-click on the empty space below the menu options on the left side of the program. Hover over "Create New" and select "Database." Name the database as "osTicket" and click "OK."
+
+Next, in the osTicket set up page in your browser, fill in the “MySQL Database:” textbox with “osTicket” then click “Install Now”.
+
+By following these steps, you will successfully install HeidiSQL and establish the necessary database for osTicket, laying the foundation for effective data management within the application.</p>
+
+<h3>Step 10: Verify osTicket Functionality</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/43c14932-e81b-4586-ba8a-8084ea7d4c0d">
+<p>To ensure osTicket is functioning correctly, access the following URL: http://localhost/osTicket/scp/login.php. Enter the username and password you set up on the osTicket login page.
+
+By visiting this URL and successfully logging in, you can confirm that osTicket is operational, allowing you to start utilizing its ticketing system and support features effectively.</p>
+
+<h3>Step 11: Tidy Up</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/10cf1538-640b-4eb0-b8a1-15a134399bf3">
+<p>Before delving into the ticket system, perform some cleanup tasks:
+
+Delete the following directory: C:\inetpub\wwwroot\osTicket\setup.
+
+Next, set the permission of the following file to "Read-only": C:\inetpub\wwwroot\osTicket\include\ost-config.php</p>
+
+<h1>osTicket Post Installation Setup</h1>
+<p>In this section, we'll configure osTicket to get a better feel how different parts of the system are created. We'll set up roles, departments, teams, agents, and users to enhance collaboration and streamline support workflows. Service Level Agreements (SLAs) will be defined to ensure prompt and effective customer service. We'll also create helpful help topics to address common user inquiries.</p>
+
+<h3>Step 12: Set up Roles</h3>
+<img width="700" height="400" alt="image" src="https://github.com/SamEshaia/Ticketing-Systems/assets/124312452/105867e9-6b9a-4b86-882c-0bc44c806ec6">
+<p>After logging in successfully, you will receive a warm greeting, confirming the successful installation of osTicket. Congratulations!
+
+To configure roles, proceed to the admin panel. Click on the "Agents" tab, then select the "Roles" menu option. Add a new role, such as "Supreme Admin," as an example.
+
+Feel free to create additional roles according to your requirements, as the example provided is just a starting point.
+
+By establishing roles, you can effectively manage user permissions and access levels within osTicket, ensuring efficient administration and delegation of tasks.</p>
+
+
+
+
